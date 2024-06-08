@@ -1,0 +1,194 @@
+body{
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+    padding: 0px;
+    text-transform: capitalize;
+}
+.whi{
+    color: white !important; 
+}
+.fixe {
+    position: fixed !important;
+    top: 0;
+    z-index: 22;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+.fa-shopping-bag{
+    /* margin-top: 9px; */
+    font-size: 28px;
+    align-items: center;
+}
+#check1{
+    padding: 0px 5px;
+    font-size: 20px;
+    color: #d35400;
+}
+.co1{
+    padding: 20px 0px;
+}
+.navbar{
+    border: 1px solid rgba(39, 22, 22, 0.087);
+    font-family: "Raleway", sans-serif;
+    padding: 10px 0px !important;
+    /* box-shadow: rgba(255, 255, 255, 0.972) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+    /* background-color: #0000003b !important; */
+/* color: white !important; */
+}
+.logo{
+    padding: 10px 5px;
+    height: 50px !important;
+}
+#btn1{  cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    margin: 5px 0px;
+    background-color: transparent;
+    border: 1px solid rgb(67, 67, 67);
+    /* border: none; */
+    font-family: play;
+}
+#btn1:hover{
+    background-color: black;
+    color: white;
+}
+#btn1>i{
+    /* font-size: 34px; */
+    /* width: 200px; */
+
+    padding: 5px 10px;
+}
+ul>li{
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 30px;
+list-style: none;
+text-decoration: none;
+    }
+    ul>li>a{
+        text-decoration: none;
+    color: black !important;
+}
+.product-card {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 10px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* max-width: 300px; */
+    /* display: inline-block; */
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.pr{
+    font-family: raleway;
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.product-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.product-card p {
+    color: #555;
+}
+.product-card .price {
+    font-size: 18px;
+    color: #e67e22;
+    margin: 10px 0;
+}
+.product-card button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.product-card button:hover {
+    background-color: #d35400;
+}
+
+.div1{
+    padding: 10px;
+    /* height: 400px; */
+    /* width: 400px; */
+    /* top: 50%; */
+/* left: 50%; */
+right: 50%;
+/* left: 10px; */
+z-index: 22222222 !important;
+background-color: white;
+top: -30%;
+/* z-index: 22 !important; */
+position: fixed;
+transform: translate(50%, 50%);
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#show{
+    position: relative;
+}
+.ct{
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#home{
+    height: 100vh;    font-family: "Raleway", sans-serif;
+}
+#about{
+    /* border: 1px solid; */
+    height: 100vh;
+margin-top: 130px;    font-family: "Raleway", sans-serif;
+
+}
+#top{
+    background-color: black;
+    height: 40px; font-family: "Raleway", sans-serif;
+    color: white;
+    display: flex;
+align-items: center;
+    /* margin-top: 0px; */
+}
+#free{
+    font-weight: bolder;
+    margin: 0px;padding: 0px;
+}
+#soa{
+    /* font-size: 10px; */
+    display: flex;
+    font-weight: bold;
+    align-items: end;
+    justify-content: end;
+    /* position: absolute; */
+    /* right: 0px; */
+    /* top: 0px; */
+    /* float: right; */
+}
+p{
+    /* padding-top: 5px; */
+    /* padding: 0px; */
+    font-family: "Raleway", sans-serif;
+
+}
+#abi{
+    height: 400px;
+    width: 500px;
+}
+#show{
+    /* border: 2px solid red; */
+}

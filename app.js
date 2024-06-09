@@ -1,4 +1,15 @@
 
+var bod=document.getElementById("body").style.display="none"
+// var loade=document.getElementById("loader").style.display="block"
+
+
+function bo(){
+    document.getElementById("none").style.display="none"
+
+    document.getElementById("body").style.display="block"
+}
+setTimeout(bo,5500)
+
 document.getElementById("re").addEventListener("click",()=>{
     localStorage.clear()
     
@@ -188,6 +199,4 @@ u7.classList.remove("whi")
 // window.addEventListener("scroll", handleResize );
 // Initial check
 
-;
-// Initial check
 

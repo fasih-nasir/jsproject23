@@ -1,4 +1,14 @@
 
+document.getElementById("re").addEventListener("click",()=>{
+    localStorage.clear()
+    
+})
+function en(){
+    if(localStorage.getItem("login") !== "true"){
+        location.href="login.html"
+    }
+}
+en();
 var num=1;
 function more(a){
     console.log(a)
@@ -176,5 +186,8 @@ u7.classList.remove("whi")
     }
 })
 // window.addEventListener("scroll", handleResize );
+// Initial check
+
+;
 // Initial check
 

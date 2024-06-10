@@ -199,4 +199,3 @@ u7.classList.remove("whi")
 // window.addEventListener("scroll", handleResize );
 // Initial check
 
-

@@ -1,4 +1,5 @@
 
+
 var bod=document.getElementById("body").style.display="none"
 // var loade=document.getElementById("loader").style.display="block"
 
@@ -16,7 +17,7 @@ document.getElementById("re").addEventListener("click",()=>{
 })
 function en(){
     if(localStorage.getItem("login") !== "true"){
-        location.href="login.html"
+        location.href="index.html"
     }
 }
 en();
@@ -198,4 +199,5 @@ u7.classList.remove("whi")
 })
 // window.addEventListener("scroll", handleResize );
 // Initial check
+
 

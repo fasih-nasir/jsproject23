@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <style>
+    body{
+        background-color: rgba(209, 207, 207, 0.374);
+    }
+.container-fluid{
+    font-family: "Raleway", sans-serif;
+            /* width: 43%; */
+            /* padding-top: 150px; */
+            /* height: 60vh; */
+            border: 1px solid red;
+        }
+        input::placeholder{
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    background-color: white;
+}
+button:hover{
+    background-color: white;
+    color: #d35400;
+    border: 1px solid #d35400;
+}
+input{ 
+ border-radius: 40px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    padding: 10px 60px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+outline: none;
+border: none;
+    margin: 10px 0px;
+}
+
+button{
+color: white;
+border-radius: 30px;
+margin: 5px 0px;
+padding: 10px 30px;
+            border: none;
+            /* padding: 20px; */
+            background-color: #f87923;    font-family: "Raleway", sans-serif;
+        }
+        #login{
+            background-color: #f47812;
+        }
+        #login:hover{
+            color: #525151;;
+            border: 1px solid #525151;;
+            background-color: transparent;}
+        #c1{  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            height: 350px;
+            padding: 30px;
+            width: 400px;
+            transition: 1.2s ease;
+            /* background-color: black; */
+            /* color: white; */            backface-visibility: hidden;
+            /* padding: 250px; */
+            position:absolute;
+            background-color: orange;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            color: white;
+            /* border: 2px solid black; */
+            margin-left: 190px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+        #c2{
+            
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            height: 350px;     margin-left: 190px;
+            width: 400px;
+            background-color: orange;
+            color: white;  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            text-align: center;
+            justify-content: center;
+            transition: 1.2s ease;
+            backface-visibility: hidden;
+            transform: rotateX(180deg);
+            position: absolute;
+            /* background-color: black; */
+            /* color: white; */
+            padding: 30px;
+            width: 400px;
+            /* border: 2px solid black; */
+        }
+        #div{
+            display: flex;
+            align-items: center;
+            flex-direction:column;
+            padding-top: 280px
+            ;
+            justify-content: center;
+        }
+     
+        #cr1{  
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            padding: 30px;
+            width: 400px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: rgb(255, 255, 255);
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* align-items: center ; */
+            /* text-align: center; */
+            /* justify-content: center; */
+
+            margin-left: -150px;
+            height: 350px;
+               transition: 1.2s ease;
+            /* top: 0px; */
+            transform: rotateY(0deg);          
+              backface-visibility: hidden;
+            position: absolute;
+            /* border: 2px solid rebeccapurple; */
+        }
+        #cr2{  border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            text-align: center;
+            justify-content: center;
+            margin-left: -150px;
+            /* border: 2px solid rgb(69, 167, 17); */
+            height: 350px;
+            width: 400px !important; 
+               transition: 1.2s ease;
+            /* top: 0px; */
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            position: absolute;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: rgb(255, 255, 255);
+        }
+        .wh{
+            background-color: white !important;
+            color: orange;
+
+        }
+        @keyframes shake {
+  0% , 100%{ transform: scale(1); }
+  25%,50% { transform:scale(0.9); background-color: white;}
+
+}
+
+.shake {
+  animation: shake 0.9s ease infinite;
+}
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-6">
+    <div id="div">
+
+        <div id="c1">
+            <h1>Resgister </h1>
+            <p>Welcome to our website! To access all of our exciting features and unlock a personalized experience, please register with your personal details.</p>
+            <button id="login" class="wh">Login</button>
+        </div>
+    <div id="c2">   
+    
+        <h2>Hi,  </h2>
+        <p>Welcome back! Please log in with your credentials to access your account and all of its features.</p>
+        <button id="create1" class="wh">Create Account</button>
+    </div>
+</div>
+</div>
+<div class="col-6">
+    <div id="div">
+        <div id="cr1">
+          <h3 class="text-center">Create Account</h3>
+          
+          <!-- <p class="text-center">Email Registeration</p> -->
+            <input type="name" name="" id="name" placeholder="Enter Your Name"><BR>
+            <input type="email" name="" id="email" placeholder="Enter Your Email Address"><BR>
+            <input type="password" name="" id="pass"placeholder="Enter Your Password"><BR>
+           <div class="d-flex align-items-center justify-content-center">
+                <button id="create" >Create Account</button><BR>
+                </div>
+                    <!-- <button id="login">Login</button><BR> -->
+    </div>
+    <div id="cr2">
+        <h3 class="text-center">Sign-IN</h3>
+<input type="email" name="" id="email1" placeholder="Enter Your Email Address">
+<input type="password" name="" id="pass1"placeholder="Enter Your Password">
+<button id="login1">Login</button><BR>
+<!-- <button id="create1">Create Account</button> -->
+</div>
+    <!-- <div><button id="create">create</button></div>
+    <div><button id="Login">login</button></div> -->
+</div>
+</div>
+</div>
+</div>
+<script>
+
+    
+    document.getElementById("create").addEventListener("click",()=> {
+    // document.getElementById("c2").style.transform = "rotateY(0deg)"
+    // document.getElementById("c1").style.transform = "rotateY(180deg)"
+       var email=document.getElementById("email").value;
+       var pass=document.getElementById("pass").value;
+    //    var peh=document.getElementById("login");
+    if(email === "" && pass ===""){
+        alert("Fill This Input")
+    }
+    else {
+        localStorage.setItem("email",email)
+        localStorage.setItem("pass",pass)
+// peh.style.backgroundColor="green"
+           alert("Your Account is created")
+        }
+    })
+
+
+
+    
+document.getElementById("create1").addEventListener("click",()=> {
+//  location.href="index.html"
+document.getElementById("cr2").style.transform = "rotateY(180deg)";
+ document.getElementById("c1").style.transform = "rotateY(0deg)"
+document.getElementById("cr1").style.transform = "rotateY(0deg)";
+ document.getElementById("c2").style.transform = "rotateY(180deg)"
+       })
+    
+    
+    
+    document.getElementById("login").addEventListener("click",()=> {
+        document.getElementById("c1").style.transform = "rotateY(180deg)"
+         document.getElementById("cr1").style.transform = "rotateY(180deg)"
+        document.getElementById("c2").style.transform = "rotateY(0deg)"
+                document.getElementById("cr2").style.transform = "rotateY(0deg)"
+      var lo=document.getElementById("login1")
+      var crt=document.getElementById("create1")
+    // document.getElementById("login1").style.display
+    var email=document.getElementById("email1").value;
+        var pass=document.getElementById("pass1").value;
+        var log="login"
+    if(email === localStorage.getItem("email")&& pass === localStorage.getItem("pass")){
+        localStorage.setItem("login",'true')
+        // location.href="Dashboard.html"
+        lo.classList.remove("shake");
+        }
+        else{
+            // crt.style.backgroundColor="red"
+            // crt.style.transform="scale(1.2)"
+            // crt.classList.add("shake"); 
+        // alert("Your Account Is Not Created First Create Your ACCOUNT")
+        // location.href="index.html"
+        // document.getElementById("cr").style.transform = "rotateY(0deg)";
+        // document.getElementById("cr1").style.transform = "rotateY(180deg)";
+    }
+    })
+
+
+
+    document.getElementById("login1").addEventListener("click",()=> {
+    //   var lo=document.getElementById("login1")
+      var crt=document.getElementById("create1")
+    // document.getElementById("login1").style.display
+    var email=document.getElementById("email1").value;
+        var pass=document.getElementById("pass1").value;
+        var log="login"
+    if(email === localStorage.getItem("email") && pass === localStorage.getItem("pass")){
+        localStorage.setItem("login",'true')
+        location.href="Dashboard.html"
+        // lo.classList.remove("shake");
+        }
+        else{
+            crt.style.backgroundColor="red"
+            crt.style.transform="scale(1.2)"
+            crt.classList.add("shake"); 
+            // crt.style.backgroundColor="red"
+            // crt.style.transform="scale(1.2)"
+            // crt.classList.add("shake"); 
+        alert("Your Account Is Not Created First Create Your ACCOUNT")
+        // location.href="index.html"
+        // document.getElementById("cr").style.transform = "rotateY(0deg)";
+        // document.getElementById("cr1").style.transform = "rotateY(180deg)";
+    }
+    })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

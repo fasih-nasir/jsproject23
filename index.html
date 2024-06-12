@@ -164,6 +164,11 @@ padding: 7px 60px;
             position: absolute;
         
         }
+        .float-right{
+            position: absolute;
+            right: 0px;
+            /* top: -5px; */
+        }
         #cr2{
             /* border: 2px solid red; */
             display: flex;
@@ -234,11 +239,61 @@ video{
         color: #f87923;
         background-color: transparent !important;
       }
+      .fgh{
+        position: absolute;
+        margin-top: 10px !important;
+      }
+      #can{
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        right: 0px !important;
+        width: 3%;
+
+        color:#f47812;
+        margin: 5px 3px;
+        border-radius: 50px;
+
+      }
+      #ho3{
+        width: 40%;
+padding: 90px;
+top: 30%;
+z-index: 444;
+        position: fixed;
+        /* height: 5%; */
+        text-align: center;
+        color: #f87923;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        background-color: white;
+        display: none;
+        transition: 3.2s ease;
+        /* transform: scale(1.3); */
+      }
+      .fa-circle-check{
+        padding-top: 30px;
+        font-size: 64px;
+      }
+      .fa-xmark{
+        color: red;
+        position: absolute;
+        right: 2px;
+        top: 0px;
+        font-size: 34px;
+        padding: 10px;
+      }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="row d-flex justify-content-center">
+            <h5 id="ho3">
+                <i class="fa-solid fa-xmark" id="cros"></i>
+                Your Account Is Created <BR>
+                <i class="fa-solid fa-circle-check"></i>
+                <!-- <video src="vi"></video> -->
+            </h5>
+          
             <div class="col-6">
     <div id="div">
 
@@ -319,9 +374,30 @@ video{
    
 </div>
 </div>
+
+
+<button class="btn" type="button" id="can" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-user"></i> </button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">ACCOUNTS</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  <div id="demo">
+  <h4>Your Existing Account</h4>
+  </div>
+  </div>
+</div>
 </div>
 </div>
 <script>
+document.getElementById("cros").addEventListener("click",()=>{
+    document.getElementById("ho3").style.display="none"
+})
+// document.addEventListener("click",()=>{
+//      document.getElementById("ho3").style.display="none"
+// })
 document.getElementById("email").addEventListener("click",()=>{
     var a=document.getElementById("emo").src="Emoji Thinking.mp4"
     document.getElementById("emo").className="dg"
@@ -342,11 +418,13 @@ document.getElementById("pass1").addEventListener("click",()=>{
     var b=document.getElementById("emo1").src="Peeking Emoji.mp4"
     document.getElementById("emo1").className="fdg"
 })
+// localStorage.clear()
 
-    
-    document.getElementById("create").addEventListener("click",()=> {
-    // document.getElementById("c2").style.transform = "rotateY(0deg)"
+   document.getElementById("create").addEventListener("click",()=> {
+
+        // document.getElementById("c2").style.transform = "rotateY(0deg)"
     // document.getElementById("c1").style.transform = "rotateY(180deg)"
+    var name=document.getElementById("name").value;
        var email=document.getElementById("email").value;
        var pass=document.getElementById("pass").value;
     //    var peh=document.getElementById("login");
@@ -354,10 +432,12 @@ document.getElementById("pass1").addEventListener("click",()=>{
         alert("Fill This Input")
     }
     else {
-        localStorage.setItem("email",email)
-        localStorage.setItem("pass",pass)
+        localStorage.setItem(`name`,`${name}`)
+        localStorage.setItem(`email`,`${email}`)
+        localStorage.setItem(`pass`,`${pass}`)
 // peh.style.backgroundColor="green"
-           alert("Your Account is created")
+document.getElementById("ho3").style.display="block"
+        //    alert("Your Account is created")
         }
     })
 
@@ -367,14 +447,21 @@ document.getElementById("pass1").addEventListener("click",()=>{
 document.getElementById("create1").addEventListener("click",()=> {
 //  location.href="index.html"
 document.getElementById("cr2").style.transform = "rotateY(180deg)";
- document.getElementById("c1").style.transform = "rotateY(0deg)"
+document.getElementById("c1").style.transform = "rotateY(0deg)"
 document.getElementById("cr1").style.transform = "rotateY(0deg)";
- document.getElementById("c2").style.transform = "rotateY(180deg)"
+document.getElementById("c2").style.transform = "rotateY(180deg)"
+document.getElementById("email1").value=""
+document.getElementById("pass1").value=""
+// var demo=document.createElement("demo");
+// demo.innerHTML="qwdzxqwdasxZ"
+
        })
     
-    
-    
+ 
+    //    var num1=0; 
     document.getElementById("login").addEventListener("click",()=> {
+        // num1++;
+        // console.log(num);
         document.getElementById("c1").style.transform = "rotateY(180deg)"
          document.getElementById("cr1").style.transform = "rotateY(180deg)"
         document.getElementById("c2").style.transform = "rotateY(0deg)"
@@ -385,9 +472,9 @@ document.getElementById("cr1").style.transform = "rotateY(0deg)";
     var email=document.getElementById("email1").value;
         var pass=document.getElementById("pass1").value;
         var log="login"
-    if(email === localStorage.getItem("email")&& pass === localStorage.getItem("pass")){
+    if(email === localStorage.getItem("email") && pass === localStorage.getItem("pass")){
         localStorage.setItem("login",'true')
-        // location.href="Dashboard.html"
+        location.href="Dashboard.html"
         lo.classList.remove("shake");
         }
         else{
@@ -399,36 +486,58 @@ document.getElementById("cr1").style.transform = "rotateY(0deg)";
         // document.getElementById("cr").style.transform = "rotateY(0deg)";
         // document.getElementById("cr1").style.transform = "rotateY(180deg)";
     }
+
     })
-
-
+    // localStorage.clear()
 
     document.getElementById("login1").addEventListener("click",()=> {
+
+            var email=document.getElementById("email1").value;
+                var pass=document.getElementById("pass1").value;
+                // e=""
+                // pass=""
+                var div=document.createElement("div");
     //   var lo=document.getElementById("login1")
       var crt=document.getElementById("create1")
+      var show=document.getElementById("demo")
+    //   show.appendChild(div)
     // document.getElementById("login1").style.display
-    var email=document.getElementById("email1").value;
-        var pass=document.getElementById("pass1").value;
         var log="login"
     if(email === localStorage.getItem("email") && pass === localStorage.getItem("pass")){
-        localStorage.setItem("login",'true')
         location.href="Dashboard.html"
-        // lo.classList.remove("shake");
+        localStorage.setItem("login",'true')
+        // div.innerHTML=`
+        // <span class="fgh"> ${de}</span>
+        // <button id="login2" class="float-right">Login</button>
+        // `
+        // show.appendChild(div)
         }
         else{
             crt.style.backgroundColor="red"
             crt.style.transform="scale(1.2)"
             crt.classList.add("shake"); 
-            // crt.style.backgroundColor="red"
-            // crt.style.transform="scale(1.2)"
-            // crt.classList.add("shake"); 
+         
         alert("Your Account Is Not Created First Create Your ACCOUNT")
-        // location.href="index.html"
-        // document.getElementById("cr").style.transform = "rotateY(0deg)";
-        // document.getElementById("cr1").style.transform = "rotateY(180deg)";
+        
     }
+    // var de=localStorage.getItem("name")
+    // console.log(de);
+    // localStorage.getItem("name")
+// console.log(localStorage.getItem("name"));
+    // var div=document.createElement("div");
+    // div.innerHTML=`
+    // <span class="fgh"> ${de}</span>
+    // <button id="login2" class="float-right">Login</button>
+    // `
+
+
+
+
+ 
     })
-</script>
+    // localStorage.clear()
+// localStorage.clear()
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

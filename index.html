@@ -9,9 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+   
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <style>
     body{
-        background-color: rgba(209, 207, 207, 0.374);
+        background: rgb(226,97,55);
+        background: linear-gradient(90deg, rgba(226,97,55,1) 13%, rgba(254,125,52,1) 55%);
+        /* background-color: rgba(209, 207, 207, 0.374); */
     }
 .container-fluid{
     font-family: "Raleway", sans-serif;
@@ -20,31 +26,52 @@
             /* height: 60vh; */
             border: 1px solid red;
         }
+        input:focus {
+            border-bottom: 1px solid lightgrey;
+    /* border-color: dodgerblue !important;  */
+}
+
+input:valid {
+    border-color: green !important;
+}
+
+input:invalid {
+    border-color: red !important;
+}
         input::placeholder{
-    text-align: center;
+            padding-bottom: 6px;
+color: rgb(149, 149, 149);
+            /* border-bottom: 1px solid rgb(216, 214, 214); */
+    /* text-align: center; */
     font-family: "Raleway", sans-serif;
-    background-color: white;
+    /* background-color: white; */
+    /* width: 200px; */
 }
 button:hover{
     background-color: white;
     color: #d35400;
     border: 1px solid #d35400;
 }
+
 input{ 
- border-radius: 40px;
-    text-align: center;
+    background-color: rgba(221, 221, 221, 0.38);
+ border-radius: 10px;
+    /* text-align: center; */
     font-family: "Raleway", sans-serif;
-    padding: 10px 60px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-outline: none;
-border: none;
+    padding: 10px 65px;
+/* border-bottom: 1px solid lightgray !important; */
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+outline: none !important;
+border: none !important;
+border: none !important;
     margin: 10px 0px;
 }
 
 button{
 color: white;
-border-radius: 30px;
+border-radius: 5px;
 margin: 5px 0px;
-padding: 10px 30px;
+padding: 7px 60px;
             border: none;
             /* padding: 20px; */
             background-color: #f87923;    font-family: "Raleway", sans-serif;
@@ -56,19 +83,20 @@ padding: 10px 30px;
             color: #525151;;
             border: 1px solid #525151;;
             background-color: transparent;}
-        #c1{  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            height: 350px;
+        #c1{ 
+             /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+            height: 450px;
             padding: 30px;
             width: 400px;
-            transition: 1.2s ease;
+            transition: 0.9s all;
             /* background-color: black; */
             /* color: white; */            backface-visibility: hidden;
             /* padding: 250px; */
             position:absolute;
-            background-color: orange;
-            border-top-left-radius: 40px;
-            border-bottom-left-radius: 40px;
-            color: white;
+            background-color:#ffffff;
+            /* border-top-left-radius: 10px; */
+            /* border-bottom-left-radius: 10px; */
+            color: orange;
             /* border: 2px solid black; */
             margin-left: 190px;
             display: flex;
@@ -81,20 +109,22 @@ padding: 10px 30px;
 
         #c2{
             
-            border-top-left-radius: 40px;
-            border-bottom-left-radius: 40px;
-            height: 350px;     margin-left: 190px;
+            /* border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px; */
+            height: 450px;
+               margin-left: -190px;
             width: 400px;
-            background-color: orange;
-            color: white;  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: white;
+            color: white; 
+             /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
             display: flex;
             flex-direction: column;
             align-items: center ;
             text-align: center;
             justify-content: center;
-            transition: 1.2s ease;
+            transition: 0.9s all;
             backface-visibility: hidden;
-            transform: rotateX(180deg);
+            transform: rotateY(180deg);
             position: absolute;
             /* background-color: black; */
             /* color: white; */
@@ -112,50 +142,47 @@ padding: 10px 30px;
         }
      
         #cr1{  
-            border-top-right-radius: 40px;
-            border-bottom-right-radius: 40px;
+            /* border-top-right-radius: 40px; */
+            /* border-bottom-right-radius: 40px; */
             padding: 30px;
             width: 400px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
             background-color: rgb(255, 255, 255);
-            /* display: flex; */
-            /* flex-direction: column; */
-            /* align-items: center ; */
-            /* text-align: center; */
-            /* justify-content: center; */
+ 
 
             margin-left: -150px;
-            height: 350px;
-               transition: 1.2s ease;
-            /* top: 0px; */
+            height: 450px;
+            transition: 0.9s all;
+     
             transform: rotateY(0deg);          
               backface-visibility: hidden;
             position: absolute;
-            /* border: 2px solid rebeccapurple; */
+        
         }
-        #cr2{  border-top-right-radius: 40px;
-            border-bottom-right-radius: 40px;
+        #cr2{
+              /* border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px; */
             display: flex;
             flex-direction: column;
             align-items: center ;
             text-align: center;
             justify-content: center;
-            margin-left: -150px;
+            margin-left: 150px;
             /* border: 2px solid rgb(69, 167, 17); */
-            height: 350px;
+            height: 450px;
             width: 400px !important; 
-               transition: 1.2s ease;
+            transition: 0.9s all;
             /* top: 0px; */
             transform: rotateY(180deg);
             backface-visibility: hidden;
             position: absolute;
             padding: 30px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
             background-color: rgb(255, 255, 255);
         }
         .wh{
-            background-color: white !important;
-            color: orange;
+            background-color: #f87923 !important;
+            color: white    ;font-family: "Raleway", sans-serif;
 
         }
         @keyframes shake {
@@ -167,7 +194,43 @@ padding: 10px 30px;
 .shake {
   animation: shake 0.9s ease infinite;
 }
-      
+video{
+    /* transition: 1.3s ease-in-out; */
+    height: 300px ;
+}
+.fdg{
+    width: 250px !important;
+    /* transition:opacity 1.3s ease-in-out; */
+    height: 300px !important;
+}
+.dg{
+    height: 300px !important;
+    /* transition: 1.3s ease-in-out; */
+}
+      #emo{
+        font-size: 12px;
+        /* font-size: 40px !important; */
+        /* height: 420px; */
+        /* border: 2px solid red; */
+        /* height: 30px; */
+      }
+      .btnc>a>i{
+        color: rgba(0, 0, 0, 0.662);
+        padding:10px;
+        border-radius: 6px;
+        margin: 0px 5px;
+        border: 1px solid  rgba(0, 0, 0, 0.662);
+        /* background-color: black; */
+      }
+      hr{
+        /* color: orangered; */
+        width: 50%;
+        border: 1px solid orange;
+      }
+      .ca{
+        color: #f87923;
+        background-color: transparent !important;
+      }
     </style>
 </head>
 <body>
@@ -177,22 +240,51 @@ padding: 10px 30px;
     <div id="div">
 
         <div id="c1">
-            <h1>Resgister </h1>
-            <p>Welcome to our website! To access all of our exciting features and unlock a personalized experience, please register with your personal details.</p>
+            <!-- <h1>Resgister </h1> -->
+            <div class="emoji">
+                <video id="emo" src="Emoji Welcome.mp4" autoplay loop muted alt="Welcome Video" ></video>
+           <!-- <video src="202406122217.mp4" autoplay loop muted id="emo"></video> -->
+            </div>
             <button id="login" class="wh">Login</button>
         </div>
-    <div id="c2">   
+    <!-- <div id="c2">   
     
         <h2>Hi,  </h2>
         <p>Welcome back! Please log in with your credentials to access your account and all of its features.</p>
-        <button id="create1" class="wh">Create Account</button>
-    </div>
+
+    </div> -->
+        <div id="cr2">
+            <BR>
+        <h3 class="text-center">Sign-IN</h3>
+<input type="email" name="" id="email1" placeholder="Enter Your Email Address">
+<input type="password" name="" id="pass1"placeholder="Enter Your Password">
+<!-- <BR> -->
+<button id="login1">Login</button><BR>
+<span style="text-align: center;">Create an Account Here         <a id="create1" class="wh ca">Create Account</a></span>
+    <BR>
+
+<!-- <BR> -->
+<div class="text-center btnc">
+    <a href="" class="button github" target="_blank">
+        <i class="fab fa-github"></i> 
+    </a>
+    <a href="" class="button facebook" target="_blank">
+        <i class="fab fa-facebook-f"></i> 
+    </a>
+    <a href="" class="button email">
+        <i class="fas fa-envelope"></i> 
+    </a>
+</div>
+<BR>
+
+</div>
 </div>
 </div>
 <div class="col-6">
     <div id="div">
         <div id="cr1">
-          <h3 class="text-center">Create Account</h3>
+            <br>
+            <h3 class="text-center"><B>Create Your Account</B></h3>
           
           <!-- <p class="text-center">Email Registeration</p> -->
             <input type="name" name="" id="name" placeholder="Enter Your Name"><BR>
@@ -200,16 +292,39 @@ padding: 10px 30px;
             <input type="password" name="" id="pass"placeholder="Enter Your Password"><BR>
            <div class="d-flex align-items-center justify-content-center">
                 <button id="create" >Create Account</button><BR>
-                </div>
+                    </div>
+                    <BR>
+                    <p class="text-center" style="text-align: center;">
+                        OR
+                    </p>
+                <!-- <BR> -->
+                <div class="text-center btnc">
+                        <a href="" class="button github" target="_blank">
+                            <i class="fab fa-github"></i> 
+                        </a>
+                        <a href="" class="button facebook" target="_blank">
+                            <i class="fab fa-facebook-f"></i> 
+                        </a>
+                        <a href="" class="button email">
+                            <i class="fas fa-envelope"></i> 
+                        </a>
+                    </div>
                     <!-- <button id="login">Login</button><BR> -->
     </div>
-    <div id="cr2">
+        <div id="c2">   
+            <div class="emoji">
+                <video id="emo1" src="Emoji Welcome.mp4" autoplay loop muted alt="Welcome Video" ></video>
+           <!-- <video src="202406122217.mp4" autoplay loop muted id="emo"></video> -->
+            </div>
+        <!-- <button class="wh">Create Account</button> -->
+    </div>
+    <!-- <div id="cr2">
         <h3 class="text-center">Sign-IN</h3>
 <input type="email" name="" id="email1" placeholder="Enter Your Email Address">
 <input type="password" name="" id="pass1"placeholder="Enter Your Password">
 <button id="login1">Login</button><BR>
-<!-- <button id="create1">Create Account</button> -->
-</div>
+
+</div> -->
     <!-- <div><button id="create">create</button></div>
     <div><button id="Login">login</button></div> -->
 </div>
@@ -217,6 +332,26 @@ padding: 10px 30px;
 </div>
 </div>
 <script>
+document.getElementById("email").addEventListener("click",()=>{
+    var a=document.getElementById("emo").src="Emoji Thinking.mp4"
+    document.getElementById("emo").className="dg"
+})
+document.getElementById("pass").addEventListener("click",()=>{
+    var b=document.getElementById("emo").src="Peeking Emoji.mp4"
+    document.getElementById("emo").className="fdg"
+})
+document.getElementById("name").addEventListener("click",()=>{
+    var c=document.getElementById("emo").src="Emoji Welcome.mp4"
+    document.getElementById("emo").className="dg"
+})
+document.getElementById("email1").addEventListener("click",()=>{
+    var a=document.getElementById("emo1").src="Emoji Thinking.mp4"
+    document.getElementById("emo1").className="dg"
+})
+document.getElementById("pass1").addEventListener("click",()=>{
+    var b=document.getElementById("emo1").src="Peeking Emoji.mp4"
+    document.getElementById("emo1").className="fdg"
+})
 
     
     document.getElementById("create").addEventListener("click",()=> {

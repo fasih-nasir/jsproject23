@@ -84,23 +84,28 @@ padding: 7px 60px;
             border: 1px solid #525151;;
             background-color: transparent;}
         #c1{ 
-             /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+           /* border: 2px solid green; */
             height: 450px;
+            transition:1.3s ease;
+     
+     transform: rotateY(180deg);          
+       backface-visibility: hidden;
+     position: absolute;
             padding: 30px;
             width: 400px;
-            transition: 0.9s all;
-            /* background-color: black; */
-            /* color: white; */            backface-visibility: hidden;
-            /* padding: 250px; */
+            transition:2s ease;
+           
             position:absolute;
             background-color:#ffffff;
-            /* border-top-left-radius: 10px; */
-            /* border-bottom-left-radius: 10px; */
+         
             color: orange;
-            /* border: 2px solid black; */
+
             margin-left: 190px;
             display: flex;
+            /* border: 2px solid red; */
             flex-direction: column;
+
+
             align-items: center ;
             text-align: center;
             justify-content: center;
@@ -122,9 +127,9 @@ padding: 7px 60px;
             align-items: center ;
             text-align: center;
             justify-content: center;
-            transition: 0.9s all;
+            transition:1.3s ease;
             backface-visibility: hidden;
-            transform: rotateY(180deg);
+            transform: rotateY(0deg);
             position: absolute;
             /* background-color: black; */
             /* color: white; */
@@ -152,32 +157,30 @@ padding: 7px 60px;
 
             margin-left: -150px;
             height: 450px;
-            transition: 0.9s all;
+            transition:2s ease;
      
-            transform: rotateY(0deg);          
+            transform: rotateY(180deg);          
               backface-visibility: hidden;
             position: absolute;
         
         }
         #cr2{
-              /* border-top-right-radius: 40px;
-            border-bottom-right-radius: 40px; */
+            /* border: 2px solid red; */
             display: flex;
             flex-direction: column;
             align-items: center ;
             text-align: center;
             justify-content: center;
             margin-left: 150px;
-            /* border: 2px solid rgb(69, 167, 17); */
+            
             height: 450px;
             width: 400px !important; 
-            transition: 0.9s all;
-            /* top: 0px; */
-            transform: rotateY(180deg);
+            transition:2s ease;
+            transform: rotateY(0deg);
             backface-visibility: hidden;
             position: absolute;
             padding: 30px;
-            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+       
             background-color: rgb(255, 255, 255);
         }
         .wh{
@@ -247,12 +250,7 @@ video{
             </div>
             <button id="login" class="wh">Login</button>
         </div>
-    <!-- <div id="c2">   
-    
-        <h2>Hi,  </h2>
-        <p>Welcome back! Please log in with your credentials to access your account and all of its features.</p>
-
-    </div> -->
+ 
         <div id="cr2">
             <BR>
         <h3 class="text-center">Sign-IN</h3>
@@ -318,15 +316,7 @@ video{
             </div>
         <!-- <button class="wh">Create Account</button> -->
     </div>
-    <!-- <div id="cr2">
-        <h3 class="text-center">Sign-IN</h3>
-<input type="email" name="" id="email1" placeholder="Enter Your Email Address">
-<input type="password" name="" id="pass1"placeholder="Enter Your Password">
-<button id="login1">Login</button><BR>
-
-</div> -->
-    <!-- <div><button id="create">create</button></div>
-    <div><button id="Login">login</button></div> -->
+   
 </div>
 </div>
 </div>

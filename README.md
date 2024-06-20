@@ -1,55 +1,60 @@
-# eCommerce Website
+# Quiz App 🧠
 
 ## Description
+This is a simple quiz application built using HTML, CSS, and JavaScript. Users can take the quiz and receive their results via email upon completion.
 
-This eCommerce website is a fully functional platform designed to provide a seamless online shopping experience. The website includes a homepage, an about page, and a product page, each tailored to enhance user engagement and satisfaction.
+## Features
+- Multiple-choice questions
+- Real-time feedback
+- Email results to the user
 
-## Pages
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- EmailJS (for sending email results)
 
-### Homepage
+## Getting Started 🚀
+![image](https://github.com/Fasih-Nasir/jsproject24/assets/154458171/d2a0cdbd-9a03-4813-91a5-34e1932de3f9)
 
-The homepage serves as the entry point for users, offering an overview of the latest products, featured items, and promotional offers. It is designed with a user-friendly interface to facilitate easy navigation and quick access to various sections of the site.
+## Usage 🎯
+1. Answer all the questions in the quiz.
+2. Submit the quiz.
+3. Enter your email address to receive the results.
+4. Check your email for the results.
 
-### About Page
+![image](https://github.com/Fasih-Nasir/jsproject24/assets/154458171/fac16163-b681-4720-ab04-d21af0fc7127)
 
-The about page provides information about the company's mission, values, and history. It introduces the team and shares the story behind the brand, aiming to build trust and connect with customers on a personal level.
+## Get Your Results Through Email 📧
 
-### Product Page
+After completing the quiz, enter your email address in the form provided to receive your quiz results.
 
-The product page displays a comprehensive list of available products, complete with descriptions, prices, and images. It includes features such as filtering options, product categorization, and detailed product information to help customers make informed purchasing decisions.
+![image](https://github.com/Fasih-Nasir/jsproject24/assets/154458171/979e9c0d-1d92-4f0c-9633-2db5e263c308)
 
-## Getting Started
+## Receive Quiz Results via Email 📩
 
-To get a local copy up and running, follow these simple steps.
+![image](https://github.com/Fasih-Nasir/jsproject24/assets/154458171/b3a6656a-f733-448a-971e-133a4c22e35a)
 
-## Authors
-
-- **Fasih-Nasir** - [GitHub Profile](https://github.com/Fasih-Nasir)
-
-
-
-## Color Reference
+## Color Reference 🎨
 
 | Color          | Hex          |
 | -------------- | ------------ |
-| Primary Color  | ![#ff6347](https://placehold.co/15x15/ff6347/ff6347.png) `#ff6347` |
-| Secondary Color| ![#4682b4](https://placehold.co/15x15/4682b4/4682b4.png) `#4682b4` |
-| Accent Color   | ![#32cd32](https://placehold.co/15x15/32cd32/32cd32.png) `#32cd32` |
+| Primary Color  | ![rgb(245,187,96)] `rgb(245,187,96)` |
+| Secondary Color| ![#ebab57] `#ebab57;` |
+| Accent Color   | ![#FFFFFF]`#FFFFFF` |
 
-## Demo
+## Demo 🌐
 
 This link will take you to the live demonstration of the project, where you can interact with the actual application and experience its features firsthand.
 
-[Live Demo](https://fasih-nasirjsproject23.netlify.app/)
+[Live Demo](https://fasih-nasirjsproject24.netlify.app/)
 
-## GitHub Profile Introduction
+## GitHub Profile Introduction 🌟
 
 A short introduction about the project's GitHub profile or the organization behind it.
 
+## Screenshots 📸
 
-## Screenshots
-
-(![image](https://github.com/Fasih-Nasir/jsproject23/assets/154458171/71d901b6-5144-413b-82f2-6591f76d45ab)
 - 👨‍💻 All of my projects are available at [https://fasih-nasirall.netlify.app/]
 
 - 📝 I regularly write articles on [https://fasihnasirportfolio.netlify.app/](https://fasihnasirportfolio.netlify.app/)
